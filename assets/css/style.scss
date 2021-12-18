@@ -1,0 +1,19 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import
+  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
+  "minima/initialize";
+
+
+@font-face {
+  font-family: "Lobster";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Lobster-Regular.ttf");
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lobster"
+}
